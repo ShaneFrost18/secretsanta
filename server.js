@@ -4,8 +4,6 @@ const app = express();
 app.use(express.json());
 app.use(express.static("public"));
 
-const PORT = process.env.PORT || 3000;
-
 // one-time codes
 let codes = {
   A7F2: "Shane",
