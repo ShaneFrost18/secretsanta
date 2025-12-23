@@ -45,6 +45,7 @@ app.post("/draw", (req, res) => {
   res.json({ pick });
 });
 
+const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log("✅ Secret Santa running on port", PORT);
 });
